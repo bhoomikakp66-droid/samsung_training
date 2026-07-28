@@ -1,0 +1,16 @@
+1.regular expression
+\s -> it matches email where there is no whitespace
+\S -> meanas contain whitespace
++ -> matches one or more
+\s+ -> matches one or more whitespace
+@ ->matches a @ symbol without whitespace arround
+\d ->matches any digit from 1 to 9
+\D -> means not 1 to 9
+{n}->matches exactly n occurance
+{n,m}->matches the occurence between n and m
+{10} ->must contain 10 digits
+[]-> matches a character ,[abc]-> a || b||character
+^->matches starting of the string, this not symbol ,[^abc]-> matches except a,b,character
+\w->means A-Z,a-z,0-9,_
+\W->means not  A-Z,a-z,0-9,_
+.->matches any character (except newline)
