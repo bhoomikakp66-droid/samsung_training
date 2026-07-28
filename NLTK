@@ -1,0 +1,55 @@
+NLTK -> natural language toolkit
+tools in nltk
+---TOKENIZATION--
+->splits text into words or sentences
+*sentence:"I love AI."
+*tokenization:["I", "love", "AI", "."]
+->types 
+word tokenization->split text into words
+*Example:
+"Machine Learning is fun."→["Machine", "Learning", "is", "fun", "."]
+sentence tokenization->split text into sentence
+*Example:
+"Hello. How are you?"→["Hello.", "How are you?"]
+---STOP WORDS---
+->stop words are the words that do not add much meaning to a  sentence , they are removed during NLP
+-> is,am,are,the,a,an,in,on,of,and are the stop word
+*Example
+Sentence:"The cat is sitting on the mat."
+After removing stop words:
+["cat", "sitting", "mat"]
+---stemming---
+-> proccess of removing prefiexs or suffixes to get the root word
+-> the root word may not be a valid english word
+*example running -> run
+studies->studi
+--lemmatization--
+->conert a word into its dictionary form using vocabulary and grammer
+*example playing-> play
+Running->run
+better-> good
+studies->study
+->output is always meaningfull
+---TEXT VECTORIZATION---
+->convert text into number so computer can understand
+-> vector is simply a list of numbers that represent text
+-> the computer converts text into numbers using a vocabulary(dictionary)
+-> the computer list all the unique words and  number them 
+->replace words with numbers
+-> we use SKLEARN beause it provide ready-made tools to convert text into vector
+->ONE-HOT ENCODING->converts words into binary vectors(0s and 1s),where 1 indicates the presence of word and 0 indicates its absence.
+---POS Tagging---
+->pos tagging is the proces of identifying the grammatical role  of each word in a sentence
+->TAG
+NN- noun*book
+NNP- proper Noun *ram
+VB- verb *play
+VBG- verb(-ing form)*playing
+VBZ → Verb (is/plays/eats)
+JJ → Adjective*tall
+RB → Adverb
+PRP → Pronoun
+DT → Article (the, a, an)
+IN → Preposition
+CC → Conjunction
+CD → Number
