@@ -53,3 +53,47 @@ DT → Article (the, a, an)
 IN → Preposition
 CC → Conjunction
 CD → Number
+-------------------------------TO CODE----------------------------
+->TOKENIZATION
+1. import nltk
+2.from nltk.tokenize import word_tokenize,sent_tokenize
+3.download 'punkt'
+*it is a pretained model by NLTk
+*It teaches the computer where to split sentences and words.
+4. download punkt_tab
+*Supporting language tables required by newer NLTK versions
+*when we use 
+sent_tokenize()
+word_tokenize() we need punkt_tab to work correctly
+5.text
+6.words after token 
+7.print word
+->STOPWORD
+1.import nltk
+2.from nltk.corpus import stopword , words
+*corpus is a collection of language data 
+*in this corpus there is stopword,words,wordnet,movie_reviews
+*stopword -> common word like the ,is,am,are
+*words->english words
+*wordnet->dictionary of english word
+*gutenberg->books and novels
+*movie_reviews->  movie review texts
+3.download stopword
+4.text
+5.word tokenize
+6.filter
+7.print filter
+->STEMMATION AND LEMMATIZAION
+1.import nltk
+2.import stopword,
+word tokenization,
+posterstemmer,
+wordnetlemmatizer
+*posterstemmer -> It is a tool in nltk,and it used to remove prefix or suffixes from a word to obtain its root word
+*wordnetlemmatizer conver a word into its dictionary form
+3.download stopwords
+punkt,
+punkt_tab,
+wordnet,
+omw-1.4
+*omw-1.4
