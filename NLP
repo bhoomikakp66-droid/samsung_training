@@ -1,0 +1,23 @@
+2.NLP
+->It ia a branch of AI that enables the computer to understand the human language
+I->t understand,analyze ,communicate,automate,extract
+NLP is used in 
+->CHATGPT
+*you ask: eplain python in simple words
+*gpt understand and replies 
+*NLP is working
+->GOOGLE TRANSLATE
+*you type hello
+*it translate to hindi
+*computer understand one language and repies in another language
+*NLP working
+->GMAIL SPAM FILTER
+*if u got the message like congrars you won 10 lakh . click here 
+*it recognizes the span message and classifies it
+->ALEXA/SIRI
+*if u ask to play the arjith song
+*it form ,action-play,song-arjith
+->AMAZON REVIEWS
+*review:this phone is amazing ->it is positive review
+*review: this phone has a worst battery-> it is negative review
+*it classifies the review
