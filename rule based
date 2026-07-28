@@ -1,0 +1,9 @@
+-------------RULE BASED NER---------------
+->Rule-Based NER is a method of identifying named entities 
+using predefined rules, patterns, and dictionaries instead of learning from data.
+->entities are
+*person
+*location
+*organization
+*date
+*time
