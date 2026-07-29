@@ -2,6 +2,8 @@ optimizer function
 Padding
 LSTM
 CNN
+pooling
+NLP fro deep learning
 --------keras-------
 ->keras are high level deep learning API built on tensorflow
 WHY WE USE THIS
