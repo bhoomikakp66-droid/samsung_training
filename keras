@@ -1,0 +1,62 @@
+optimizer function
+Padding
+LSTM
+CNN
+--------keras-------
+->keras are high level deep learning API built on tensorflow
+WHY WE USE THIS
+->to build neural network models
+->train models using data
+->make predictions
+->develop deep learning applocations with less code
+APPLICATION OF KERAS
+->face recognition
+->image classification
+-> speech recognition
+-----sequential model------
+->layers are arranged one after another in a linear sequences
+->data flows from input layer to one or more output layer
+WHY WE USE THIS
+->we use this when the sequential neural network has only one input and one output, 
+and the layers are connected in a sttraight line
+-------DENSE----
+->it is fully connected network
+->every neuron in a layer is connected to its previous layer
+->it is most commmonly used layer in keras
+-> dense uses the activation function
+WHAT DOES THIS DO
+->Receives input from the previous layer.
+->Performs calculations using weights and biases.
+->Applies an activation function.
+->Passes the output to the next layer.
+-------ACTIVATION FUNCTION-------------
+-> it is a mathematical functon used in neural network that decides the output of a neuron
+->it helps to understand the complex pattern and determines whether the information should passes to the next layer
+-> it improves the model's ability to make accurate predictions
+-> neurn first calculate the value and activation function decides whether the output is sent to sent layer or not
+----COMMON ACTIVATION FUNCTION----
+RELU-Rectified Linear Unit
+-> it is most commenly used activation function in deep learning 
+->it allows only positive values to pass through and conver all negative value to zero
+->ReLU(x)=max(0,x)
+-> this means
+if x>0 , output = x
+if x<=0, output = 0
+->dense value  is 32, 64, 128, 256, 512 for hidden layer
+SIGMOID ACTIVATION FUNCTION
+->sigmoid activation function is a mathematical function tha converts any input value into an output between 0 and 1.
+->σ(x)=1/1+e−x​
+-> x is a input value 
+->e^-x is eulers number (approx 2.718)
+->large negative input is close to 0
+->zero input ->output is 0.5
+->large positive input is close to 1
+->used in face recognition for match and no match
+-> dense value is 1 for output(binary classification)
+SOFTMAX ACTIVATION FUNCTION
+->The Softmax activation function is an activation function that converts the output of a neural network into probabilities.
+->It is mainly used for multi-class classification, where the model must choose one class from multiple possible classes.
+->it is used for 3 or more
+​​->dense value is number of classes for ouput (multi-class classification)
+---------OPTIMIZER---------
+->An optimizer is an algorithm that learns from the model's mistakes by updating the weights and biases to reduce the loss and improve prediction accuracy.
