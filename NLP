@@ -19,5 +19,39 @@ NLP is used in
 *it form ,action-play,song-arjith
 ->AMAZON REVIEWS
 *review:this phone is amazing ->it is positive review
+--------NLP PIPELINE--------
+                Raw Text
+                   │
+                   ▼
+        1. Text Collection
+                   │
+                   ▼
+        2. Text Preprocessing
+                   │
+     ┌─────────────┼─────────────┐
+     │             │             │
+ Tokenization  Lowercase   Remove Punctuation
+     │             │             │
+     └─────────────┼─────────────┘
+                   │
+                   ▼
+          Stop-word Removal
+                   │
+                   ▼
+     Stemming / Lemmatization
+                   │
+                   ▼
+          POS Tagging / NER
+                   │
+                   ▼
+       Feature Extraction
+     (BoW / TF-IDF / Word2Vec /
+        Keras Embedding)
+                   │
+                   ▼
+     Machine Learning / Deep Learning
+                   │
+                   ▼
+             NLP Applications
 *review: this phone has a worst battery-> it is negative review
 *it classifies the review
