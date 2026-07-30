@@ -1,0 +1,10 @@
+PADDING
+*padding is the process of making all sequences the same length by adding zeros
+*because neural network excepts input of the same length
+LIMITED VOCABULARY
+*Instead of keeping every unique word, we keep only the top N most frequent words
+SEQUENCES
+A sequence is the integer representation of sentence
+*eg cat,dog,fish
+*index 1,2,3
+*sequence:[1,2,3]
