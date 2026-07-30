@@ -1,0 +1,317 @@
+---------------------TO DO--------------------------
+. Text Collection
+Reading text from files (TXT, PDF, Word)
+Web scraping
+Social media data
+Databases       
+
+Example:
+
+Read a PDF using pdfplumber
+Read a text file
+2. Text Preprocessing
+
+Prepares raw text for analysis.
+
+a) Tokenization
+
+Splits text into words or sentences.
+
+Example:
+
+Artificial Intelligence is amazing.
+
+Word Tokens:
+
+Artificial
+Intelligence
+is
+amazing
+
+Sentence Tokens:
+
+Artificial Intelligence is amazing.
+AI is the future.
+
+Python:
+
+word_tokenize()
+sent_tokenize()
+b) Lowercasing
+AI → ai
+Robot → robot
+c) Removing Punctuation
+
+Before:
+
+Hello!
+
+After:
+
+Hello
+d) Stop Word Removal
+
+Removes common words.
+
+Example:
+
+is
+the
+a
+an
+of
+to
+
+Python:
+
+stopwords.words("english")
+e) Stemming
+
+Converts words to their root.
+
+Examples:
+
+playing → play
+studies → studi
+walking → walk
+
+Python:
+
+PorterStemmer()
+f) Lemmatization
+
+Produces dictionary words.
+
+Examples:
+
+running → run
+better → good
+studies → study
+
+Python:
+
+WordNetLemmatizer()
+3. Part-of-Speech (POS) Tagging
+
+Identifies grammatical roles.
+
+Example:
+
+Robot is intelligent
+
+Output:
+
+Robot        Noun
+is           Verb
+intelligent  Adjective
+
+Python:
+
+pos_tag()
+4. Named Entity Recognition (NER)
+
+Finds names of people, places, organizations, etc.
+
+Example:
+
+Sundar Pichai works at Google.
+
+Output:
+
+Sundar Pichai → Person
+Google → Organization
+5. Text Representation
+
+Converts text into numbers.
+
+Bag of Words (BoW)
+
+Counts word frequency.
+
+TF-IDF
+
+Measures word importance.
+
+Python:
+
+TfidfVectorizer()
+6. Word Embeddings
+
+Represent words as vectors.
+
+Word2Vec
+AI
+
+↓
+
+[0.34 -0.22 0.11 ...]
+GloVe
+
+Pre-trained embeddings.
+
+FastText
+
+Represents words using character n-grams.
+
+Keras Embedding Layer
+
+Learns embeddings during neural network training.
+
+7. Feature Extraction
+
+Important features include:
+
+TF-IDF
+Word frequency
+N-grams
+POS tags
+Named entities
+8. Text Classification
+
+Classifies text into categories.
+
+Examples:
+
+Spam Detection
+Email Classification
+News Classification
+Movie Review Classification
+
+Algorithms:
+
+Naive Bayes
+SVM
+Logistic Regression
+Neural Networks
+9. Sentiment Analysis
+
+Finds emotions.
+
+Example:
+
+I love ChatGPT.
+
+Positive
+
+The service is terrible.
+
+Negative
+
+10. Topic Modeling
+
+Finds topics in documents.
+
+Algorithms:
+
+LDA
+NMF
+11. Information Extraction
+
+Extracts useful information.
+
+Example:
+
+Apple launched iPhone 17 in California.
+
+Extract:
+
+Company
+Product
+Location
+12. Question Answering
+
+Example:
+
+Question:
+
+What is DBMS?
+
+Answer:
+
+A Database Management System is...
+13. Automatic Question Generation
+
+Example:
+
+Sentence:
+
+A database is a collection of related data.
+
+Generated question:
+
+What is a database?
+14. Text Summarization
+
+Converts long text into short summaries.
+
+Types:
+
+Extractive
+Abstractive
+15. Machine Translation
+
+Example:
+
+English → Kannada
+English → Hindi
+English → French
+
+Tools:
+
+Google Translate
+MarianMT
+16. Speech Processing
+Speech-to-Text
+
+Audio → Text
+
+Example:
+
+Voice Assistant
+
+Text-to-Speech
+
+Text → Voice
+
+Example:
+
+Google Assistant
+
+17. Chatbots
+
+Examples:
+
+ChatGPT
+Gemini
+Claude
+Alexa
+18. Large Language Models (LLMs)
+
+Examples:
+
+GPT
+Llama
+Gemini
+Claude
+Mistral
+19. Transformer Models
+
+Examples:
+
+BERT
+RoBERTa
+T5
+GPT
+BART
+20. NLP Libraries
+
+Python libraries:
+
+NLTK
+spaCy
+Gensim
+Transformers (Hugging Face)
+TensorFlow
+Keras
+PyTorch
+Scikit-learn
