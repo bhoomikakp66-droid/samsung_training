@@ -1,0 +1,20 @@
+word cloud is graphical representation of text data in which size of word indicates the frequently appears in text
+APPLICATIONS
+Document analysis
+Keyword extraction
+Text summarization
+Customer review analysis
+Social media trend analysis
+News article visualization
+Research paper analysis
+LIBRARY
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
+GENERATE WORD
+wordcloud = WordCloud(
+    width=800,
+    height=400,
+    background_color="white"
+).generate(filtered_text)
