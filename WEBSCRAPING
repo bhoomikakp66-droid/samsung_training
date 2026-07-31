@@ -16,3 +16,10 @@ USER AGENT
 ->not all the website prove the permision for webscraping 
 ->they can block a request 
 -> so we use user agent
+
+TO FIND THE USER AGENT
+1.go to my browser.com
+2.direct to setting
+3.prases to  usergent
+4.copy the text inside the blue box
+
