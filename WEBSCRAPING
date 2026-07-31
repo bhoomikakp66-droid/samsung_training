@@ -1,0 +1,18 @@
+-----WEBSCRAPING---
+->Web Scraping is the process of automatically extracting data from websites using a program instead of copying the information manually.
+
+LIBRARY
+->requests-used to download the webpage from the internet 
+->BeautifulSoup-used to read and understand the HTML that requests downloaded
+
+APPLICATION
+1. E-commerce (Price Comparison) 🛒
+2. Travel Websites ✈️
+3. Job Portals 💼
+4. News Aggregators 📰
+5. Movie Recommendation
+
+USER AGENT
+->not all the website prove the permision for webscraping 
+->they can block a request 
+-> so we use user agent
