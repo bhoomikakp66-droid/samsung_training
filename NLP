@@ -65,3 +65,45 @@ using predefined rules, patterns, and dictionaries instead of learning from data
 *organization
 *date
 *time
+
+----SPAM EMAIL IDENTIFING----
+#this is for the rule based NLP to detect the spam
+message=input("enter the message:").lower()
+
+spam_words=["win","won","free","prize","offer","money","click"]
+pro_words=["project","meeting","class","internship"]
+is_spam=False
+#for spam 
+for word in spam_words:
+    if word in message:
+        is_spam=True
+        break
+if is_spam:
+    print("spam email")
+else:
+    print("Not spam")
+
+#spam word count
+count=0
+
+for word in spam_words:
+    if word in message:
+        count+=1
+if count>=2:
+    print("spam")
+else:
+    print("not spam")
+#classifing using non spam keywords
+if any(word in message for word in spam_words):
+    print("spam email")
+elif any(word in message for word in pro_words):
+    print("not spam")
+else:
+    print("unknown")
+#appied condition for is_pam and count
+if is_spam and count>=2:
+    print("spam email")
+elif is_spam and count<2:
+    print("not spam")
+else:
+    print("not known email")
