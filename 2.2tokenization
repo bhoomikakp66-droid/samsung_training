@@ -1,0 +1,45 @@
+---TOKENIZATION--
+->splits text into words or sentences
+*sentence:"I love AI."
+*tokenization:["I", "love", "AI", "."]
+->types 
+word tokenization->split text into words
+*Example:
+"Machine Learning is fun."→["Machine", "Learning", "is", "fun", "."]
+sentence tokenization->split text into sentence
+*Example:
+"Hello. How are you?"→["Hello.", "How are you?"]
+
+1. What is a Token?
+        ↓
+2. split()
+        ↓
+3. Word Tokenization
+        ↓
+4. Sentence Tokenization
+        ↓
+5. Character Tokenization
+        ↓
+6. Regex Tokenization
+        ↓
+7. Vocabulary
+        ↓
+8. Token IDs
+        ↓
+9. Token Frequency
+        ↓
+10. Special Tokens
+        ↓
+11. OOV Words
+        ↓
+12. BPE
+        ↓
+13. WordPiece
+        ↓
+14. SentencePiece
+        ↓
+15. Hugging Face Tokenizers
+        ↓
+16. Build Your Own Tokenizer
+
+
