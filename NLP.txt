@@ -1,0 +1,109 @@
+2.NLP
+->It ia a branch of AI that enables the computer to understand the human language
+I->t understand,analyze ,communicate,automate,extract
+NLP is used in 
+->CHATGPT
+*you ask: explain python in simple words
+*gpt understand and replies 
+*NLP is working
+->GOOGLE TRANSLATE
+*you type hello
+*it translate to hindi
+*computer understand one language and repies in another language
+*NLP working
+->GMAIL SPAM FILTER
+*if u got the message like congrars you won 10 lakh . click here 
+*it recognizes the span message and classifies it
+->ALEXA/SIRI
+*if u ask to play the arjith song
+*it form ,action-play,song-arjith
+->AMAZON REVIEWS
+*review:this phone is amazing ->it is positive review
+--------NLP PIPELINE--------
+                Raw Text
+                   │
+                   ▼
+        1. Text Collection
+                   │
+                   ▼
+        2. Text Preprocessing
+                   │
+     ┌─────────────┼─────────────┐
+     │             │             │
+ Tokenization  Lowercase   Remove Punctuation
+     │             │             │
+     └─────────────┼─────────────┘
+                   │
+                   ▼
+          Stop-word Removal
+                   │
+                   ▼
+     Stemming / Lemmatization
+                   │
+                   ▼
+          POS Tagging / NER
+                   │
+                   ▼
+       Feature Extraction
+     (BoW / TF-IDF / Word2Vec /
+        Keras Embedding)
+                   │
+                   ▼
+     Machine Learning / Deep Learning
+                   │
+                   ▼
+             NLP Applications
+*review: this phone has a worst battery-> it is negative review
+*it classifies the review
+
+-------------RULE BASED NER---------------
+->Rule-Based NER is a method of identifying named entities 
+using predefined rules, patterns, and dictionaries instead of learning from data.
+->entities are
+*person
+*location
+*organization
+*date
+*time
+
+----SPAM EMAIL IDENTIFING----
+#this is for the rule based NLP to detect the spam
+message=input("enter the message:").lower()
+
+spam_words=["win","won","free","prize","offer","money","click"]
+pro_words=["project","meeting","class","internship"]
+is_spam=False
+#for spam 
+for word in spam_words:
+    if word in message:
+        is_spam=True
+        break
+if is_spam:
+    print("spam email")
+else:
+    print("Not spam")
+
+#spam word count
+count=0
+
+for word in spam_words:
+    if word in message:
+        count+=1
+if count>=2:
+    print("spam")
+else:
+    print("not spam")
+#classifing using non spam keywords
+if any(word in message for word in spam_words):
+    print("spam email")
+elif any(word in message for word in pro_words):
+    print("not spam")
+else:
+    print("unknown")
+#appied condition for is_pam and count
+if is_spam and count>=2:
+    print("spam email")
+elif is_spam and count<2:
+    print("not spam")
+else:
+    print("not known email")
